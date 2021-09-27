@@ -82,7 +82,7 @@
   transition: 0.5s all ease-in-out;
 }
 .btn-outline-primary:hover {
-  background-color: #4452bc;
+  background-color: #a0828f;
   color: #fff;
 }
 .btn-outline-success {
@@ -97,7 +97,7 @@
   transition: 0.5s all ease-in-out;
 }
 .btn-outline-success:hover {
-  background-color: #85e519;
+  background-color: #a59d72;
   color: #fff;
 }
 .btn-outline-danger {
@@ -112,7 +112,7 @@
   transition: 0.5s all ease-in-out;
 }
 .btn-outline-danger:hover {
-  background-color: #ff4d4d;
+  background-color: #ff6066;
   color: #fff;
 }
 
