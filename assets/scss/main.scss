@@ -1,11 +1,13 @@
 // Abstrats
 @import
     'abstract/variables',
-    'abstract/fonts';
+    'abstract/fonts',
+    'abstract/functions';
 // Components
 @import
     'components/containers',
     'components/title',
     'components/buttons',
+    'components/alerts',
     'components/cards',
     'components/copyright';

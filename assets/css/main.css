@@ -283,6 +283,23 @@
   color: #fff;
 }
 
+.alert-primary, .alert-danger {
+  border-radius: 10px;
+  font-size: 1.15rem;
+  letter-spacing: 5px;
+  margin: 0.5rem;
+  padding: 15px;
+  width: calc(100% - 1rem - 30px);
+}
+.alert-primary {
+  background: #414352;
+  color: #f8f8c3;
+}
+.alert-danger {
+  background: #ff6666;
+  color: #f8f8c3;
+}
+
 .jcarlosj-card {
   border-radius: 5px;
   border-width: 1px;

@@ -1,0 +1,20 @@
+.alert {
+    &-primary, &-danger {
+        border-radius: 10px;
+        font-size: 1.15rem;
+        letter-spacing: 5px;
+        margin: 0.5rem;
+        padding: 15px;
+        width: calc( 100% - 1rem - 30px );
+    }
+
+    &-primary {
+        background: map-get($map: $pallete, $key: 'primary' );
+        color: map-get($map: $pallete, $key: 'light' );
+    }
+
+    &-danger {
+        background: lighten( map-get($map: $pallete, $key: 'danger' ), 20 );
+        color: map-get($map: $pallete, $key: 'light' );
+    }
+}
