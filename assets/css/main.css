@@ -285,6 +285,7 @@
 
 .alert-primary, .alert-danger {
   border-radius: 10px;
+  color: #f8f8c3;
   font-size: 1.15rem;
   letter-spacing: 5px;
   margin: 0.5rem;
@@ -293,11 +294,9 @@
 }
 .alert-primary {
   background: #414352;
-  color: #f8f8c3;
 }
 .alert-danger {
   background: #ff6666;
-  color: #f8f8c3;
 }
 
 .jcarlosj-card {

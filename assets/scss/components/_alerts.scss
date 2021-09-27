@@ -1,6 +1,7 @@
 .alert {
     &-primary, &-danger {
         border-radius: 10px;
+        color: get-color( 'light' );
         font-size: 1.15rem;
         letter-spacing: 5px;
         margin: 0.5rem;
@@ -9,12 +10,10 @@
     }
 
     &-primary {
-        background: map-get($map: $pallete, $key: 'primary' );
-        color: map-get($map: $pallete, $key: 'light' );
+        background: get-color( 'primary' );
     }
 
     &-danger {
-        background: lighten( map-get($map: $pallete, $key: 'danger' ), 20 );
-        color: map-get($map: $pallete, $key: 'light' );
+        background: lighten( get-color( 'danger' ), 20 );
     }
 }
