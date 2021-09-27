@@ -43,7 +43,7 @@
         transition: .5s all ease-in-out;
 
         &:hover {
-            background-color: mix( $color, pink );
+            background-color: $color;
             color: #fff;
         }
     }
@@ -58,7 +58,8 @@
     min-width: 100px;
     transition: .5s all ease-in-out;
 
-    @include button( 'primary', $primary );
-    @include button( 'success', $success );
-    @include button( 'danger', $danger );
+    @include button( 'primary', nth( $colors, 1 ) );
+    @include button( 'success', nth( $colors, 2 ) );
+    @include button( 'danger', nth( $colors, 3 ) );
+    @include button( 'dark', nth( $colors, 4 ) );
 }

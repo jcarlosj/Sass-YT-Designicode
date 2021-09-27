@@ -1,9 +1,13 @@
 // ! Variables
 $primary: rgb(65, 67, 82);
 $secondary: rgb(104, 107, 131);
-$success: rgb(75, 121, 24);
+$success: green;
 $danger: red;
+$dark: black;
 $primary-opacity: rgba( $primary, 0.4 );
 $font-family: 'Gemunu Libre', sans-serif;
 $font-size: 1.75rem;
 $brand: 'jcarlosj';
+
+// Listas
+$colors: $primary, $success, $danger, $dark;
