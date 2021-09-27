@@ -14,6 +14,6 @@
     }
 
     &-danger {
-        background: lighten( get-color( 'danger' ), 20 );
+        background: reduce-color( 'danger', 20 );
     }
 }

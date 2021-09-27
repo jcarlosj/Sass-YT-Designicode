@@ -1,3 +1,7 @@
 @function get-color( $name ) {
     @return map-get( $map: $pallete, $key: $name );
 }
+
+@function reduce-color( $name, $amount ) {
+    @return lighten( get-color( $name ), $amount: $amount );
+}
