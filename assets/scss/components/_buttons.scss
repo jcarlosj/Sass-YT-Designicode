@@ -58,8 +58,7 @@
     min-width: 100px;
     transition: .5s all ease-in-out;
 
-    @include button( 'primary', nth( $colors, 1 ) );
-    @include button( 'success', nth( $colors, 2 ) );
-    @include button( 'danger', nth( $colors, 3 ) );
-    @include button( 'dark', nth( $colors, 4 ) );
+    @each $name, $color in $colors {
+        @include button( $name, $color );
+    }
 }

@@ -130,6 +130,36 @@
   background-color: black;
   color: #fff;
 }
+.btn-outline-blue {
+  border: 1px solid #0208d4;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(2, 8, 212, 0.2);
+  color: #0208d4;
+  font-size: 16px;
+  height: 40px;
+  margin: 5px 0;
+  min-width: 100px;
+  transition: 0.5s all ease-in-out;
+}
+.btn-outline-blue:hover {
+  background-color: #0208d4;
+  color: #fff;
+}
+.btn-outline-orange {
+  border: 1px solid orange;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 2px rgba(255, 165, 0, 0.2);
+  color: orange;
+  font-size: 16px;
+  height: 40px;
+  margin: 5px 0;
+  min-width: 100px;
+  transition: 0.5s all ease-in-out;
+}
+.btn-outline-orange:hover {
+  background-color: orange;
+  color: #fff;
+}
 
 .jcarlosj-card {
   border-radius: 5px;
