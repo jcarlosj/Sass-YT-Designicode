@@ -1,26 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;600&display=swap');
 // Archivo principal de Sass
 
 // ! Variables
 $primary: rgb(65, 67, 82);
 $secondary: rgb(104, 107, 131);
 $primary-opacity: rgba( $primary, 0.4 );
+$font-family: 'Gemunu Libre', sans-serif;
 $font-size: 1.75rem;
 $brand: 'jcarlosj';
 
 // ! Usando las variables
 .#{ $brand }-title-primary {
     color: $primary;
-    font-size:  $font-size;
+    font: {
+        size: $font-size;
+        weight: bold;
+        family: $font-family;
+    }
+    border: {
+        bottom: 1px solid #{ $primary }
+    };
 }
 
 .#{ $brand }-title-secondary {
     color: $secondary;
-    font-size:  $font-size - 0.5rem;
+    font: {
+        size: $font-size - 0.5rem;
+        weight: bold;
+        family: $font-family;
+    }
+    border: {
+        bottom: 1px dotted #{ $secondary }
+    };
 }
 
 .#{ $brand }-title-light {
     color: $primary-opacity;
-    font-size:  $font-size - 0.5rem;
+    font: {
+        size: $font-size - 0.5rem;
+        weight: bold;
+        family: $font-family;
+    }
+    border: {
+        bottom: 1px dotted #{ $primary-opacity }
+    };
 }
 
 .brand::before {
