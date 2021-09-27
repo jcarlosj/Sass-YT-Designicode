@@ -1,4 +1,4 @@
-// Placeholder selector
+// Solid Buttons (Placeholder selector)
 %btn {
     border: {
         radius: 5px;
@@ -25,6 +25,68 @@
     }
 
     &primary {  background: $primary;   }
-    &success {  background: $sucess;    }
+    &success {  background: $success;    }
     &danger {   background: $danger;    }
+}
+
+// Outline Buttons (Parent selector)
+.btn-outline {
+    background-color: transparent;
+    font-size: 16px;
+    height: 40px;
+    margin:  5px 0;
+    min-width: 100px;
+    transition: .5s all ease-in-out;
+
+    &-primary {
+        border: {
+            style: solid;
+            width: 1px;
+            color: $primary;
+            radius: 5px;
+        }
+        box-shadow: 2px 2px 6px 2px rgba( $primary, 0.2 );
+        color: $primary;
+
+        &:hover {
+            background: $primary;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    &-success {
+        border: {
+            style: solid;
+            width: 1px;
+            color: $success;
+            radius: 5px;
+        }
+        box-shadow: 2px 2px 6px 2px rgba( $success, 0.2 );
+        color: $success;
+
+        &:hover {
+            background: $success;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    &-danger {
+        border: {
+            style: solid;
+            width: 1px;
+            color: $danger;
+            radius: 5px;
+        }
+        box-shadow: 2px 2px 6px 2px rgba( $danger, 0.2 );
+        color: $danger;
+
+        &:hover {
+            background: $danger;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
 }
