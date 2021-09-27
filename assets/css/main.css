@@ -23,6 +23,32 @@
   border-bottom: 1px dotted rgba(65, 67, 82, 0.4);
 }
 
+.btn-danger, .btn-success, .btn-primary {
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  height: 40px;
+  margin: 5px 0;
+  min-width: 100px;
+}
+.btn-danger:hover, .btn-success:hover, .btn-primary:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #414352;
+}
+
+.btn-success {
+  background: #4b7918;
+}
+
+.btn-danger {
+  background: #d42b25;
+}
+
 .jcarlosj-card {
   border-radius: 5px;
   border-width: 1px;
