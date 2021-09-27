@@ -1,0 +1,15 @@
+@mixin size( $height, $width, $padding, $margin, $background ) {
+    background: $background;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+}
+
+.container {
+    @include size( 100px, 100px, 1rem, 1rem, red );
+
+    &-big {
+        @include size( 250px, 350px, 1rem, 1rem, orange );
+    }
+}

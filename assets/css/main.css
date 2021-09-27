@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;600&display=swap");
+.container {
+  background: red;
+  height: 100px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 100px;
+}
+.container-big {
+  background: orange;
+  height: 250px;
+  margin: 1rem;
+  padding: 1rem;
+  width: 350px;
+}
+
 .jcarlosj-title-primary {
   color: #414352;
   font-size: 1.75rem;
