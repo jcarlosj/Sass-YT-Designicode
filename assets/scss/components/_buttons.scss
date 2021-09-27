@@ -29,6 +29,26 @@
     &danger {   background: $danger;    }
 }
 
+// Creamos un mixin para refactorizar el .btn-outline
+@mixin button( $name, $color ) {
+    .btn-outline-#{ $name } {
+        border: 1px solid $color;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px 2px rgba( $color, 0.2 );
+        color: $color;
+        font-size: 16px;
+        height: 40px;
+        margin:  5px 0;
+        min-width: 100px;
+        transition: .5s all ease-in-out;
+
+        &:hover {
+            background-color: $color;
+            color: #fff;
+        }
+    }
+}
+
 // Outline Buttons (Parent selector)
 .btn-outline {
     background-color: transparent;
@@ -37,56 +57,8 @@
     margin:  5px 0;
     min-width: 100px;
     transition: .5s all ease-in-out;
-
-    &-primary {
-        border: {
-            style: solid;
-            width: 1px;
-            color: $primary;
-            radius: 5px;
-        }
-        box-shadow: 2px 2px 6px 2px rgba( $primary, 0.2 );
-        color: $primary;
-
-        &:hover {
-            background: $primary;
-            color: #fff;
-            cursor: pointer;
-        }
-    }
-
-    &-success {
-        border: {
-            style: solid;
-            width: 1px;
-            color: $success;
-            radius: 5px;
-        }
-        box-shadow: 2px 2px 6px 2px rgba( $success, 0.2 );
-        color: $success;
-
-        &:hover {
-            background: $success;
-            color: #fff;
-            cursor: pointer;
-        }
-    }
-
-    &-danger {
-        border: {
-            style: solid;
-            width: 1px;
-            color: $danger;
-            radius: 5px;
-        }
-        box-shadow: 2px 2px 6px 2px rgba( $danger, 0.2 );
-        color: $danger;
-
-        &:hover {
-            background: $danger;
-            color: #fff;
-            cursor: pointer;
-        }
-    }
-
 }
+
+@include button( 'primary', $primary );
+@include button( 'success', $success );
+@include button( 'danger', $danger );
