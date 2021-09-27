@@ -2,6 +2,7 @@
 $primary: rgb(65, 67, 82);
 $secondary: rgb(104, 107, 131);
 $success: green;
+$light: rgb(248, 248, 195);
 $danger: red;
 $dark: black;
 $primary-opacity: rgba( $primary, 0.4 );
@@ -11,3 +12,15 @@ $brand: 'jcarlosj';
 
 // Listas
 $colors: 'primary' $primary, 'success' $success, 'danger' $danger, 'dark' $dark, 'blue' rgba( 2, 8, 212 ), 'orange' orange;
+
+// Maps (key, value)
+$pallete: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+    'blue': rgb( 21, 8, 212 ),
+    'orange': orange
+);

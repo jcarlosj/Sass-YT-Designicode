@@ -13,6 +13,8 @@
 
     &:hover {
         cursor: pointer;
+        background: map-get( $map: $pallete, $key: 'light' );
+        color: map-get( $map: $pallete, $key: 'dark' );
     }
 }
 
@@ -24,9 +26,9 @@
         @extend %btn;
     }
 
-    &primary {  background: $primary;   }
-    &success {  background: $success;    }
-    &danger {   background: $danger;    }
+    &primary {  background: map-get( $map: $pallete, $key: 'primary' );   }
+    &success {  background: map-get( $map: $pallete, $key: 'success' );    }
+    &danger {   background: map-get( $map: $pallete, $key: 'danger' );    }
 }
 
 // Creamos un mixin para refactorizar el .btn-outline
@@ -58,7 +60,13 @@
     min-width: 100px;
     transition: .5s all ease-in-out;
 
+    // Itera lista de colores
     @each $name, $color in $colors {
+        @include button( $name, $color );
+    }
+
+    // Itera map de paleta de colores
+    @each $name, $color in $pallete {
         @include button( $name, $color );
     }
 }
