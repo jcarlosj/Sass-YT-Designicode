@@ -16,17 +16,15 @@
     }
 }
 
-.btn-primary {
-    @extend %btn;
-    background: $primary;
-}
+.btn- {
+    // Nesting nombre de clases
+    &primary,
+    &success,
+    &danger {
+        @extend %btn;
+    }
 
-.btn-success {
-    @extend %btn;
-    background: $sucess;
-}
-
-.btn-danger {
-    @extend %btn;
-    background: $danger;
+    &primary {  background: $primary;   }
+    &success {  background: $sucess;    }
+    &danger {   background: $danger;    }
 }
