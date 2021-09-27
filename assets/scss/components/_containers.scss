@@ -7,9 +7,21 @@
 }
 
 .container {
-    @include size( 100px, 100px, 1rem, 1rem, red );
+    @include size(
+        100px,
+        100px,
+        1rem,
+        1rem,
+        lighten( red, 15 )
+    );
 
     &-big {
-        @include size( 250px, 350px, 1rem, 1rem, orange );
+        @include size(
+            250px,
+            350px,
+            1rem,
+            1rem,
+            darken( $color: orange, $amount: 15 )
+        );
     }
 }
