@@ -1,0 +1,4 @@
+.brand::before {
+    font-weight: bold;
+    content: "#{ $brand } ";
+}

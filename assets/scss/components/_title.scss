@@ -1,0 +1,36 @@
+// ! Usando las variables
+.#{ $brand }-title-primary {
+    color: $primary;
+    font: {
+        size: $font-size;
+        weight: bold;
+        family: $font-family;
+    }
+    border: {
+        bottom: 1px solid #{ $primary }
+    };
+}
+
+.#{ $brand }-title-secondary {
+    color: $secondary;
+    font: {
+        size: $font-size - 0.5rem;
+        weight: bold;
+        family: $font-family;
+    }
+    border: {
+        bottom: 1px dotted #{ $secondary }
+    };
+}
+
+.#{ $brand }-title-light {
+    color: $primary-opacity;
+    font: {
+        size: $font-size - 0.5rem;
+        weight: bold;
+        family: $font-family;
+    }
+    border: {
+        bottom: 1px dotted #{ $primary-opacity }
+    };
+}
