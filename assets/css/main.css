@@ -55,7 +55,6 @@
   min-width: 100px;
   transition: 0.5s all ease-in-out;
 }
-
 .btn-outline-primary {
   border: 1px solid #414352;
   border-radius: 5px;
@@ -71,7 +70,6 @@
   background-color: #414352;
   color: #fff;
 }
-
 .btn-outline-success {
   border: 1px solid #4b7918;
   border-radius: 5px;
@@ -87,7 +85,6 @@
   background-color: #4b7918;
   color: #fff;
 }
-
 .btn-outline-danger {
   border: 1px solid #d42b25;
   border-radius: 5px;
