@@ -46,6 +46,33 @@ $brand: 'jcarlosj';
     };
 }
 
+.#{ $brand }-card {
+    border: {
+        radius: 5px;
+        width: 1px;
+        style: solid;
+        color: $secondary;
+    }
+    margin: .5rem 0;
+    padding: 0;
+    width: 200px;
+
+    h2 {
+        line-height: 50px;
+        margin: 0;
+        padding: 0 .8rem;
+    }
+    p {
+        padding: 0 .8rem;
+    }
+
+    img {
+        display: block;
+        height: 1 50px;
+        width: 100%;
+    }
+}
+
 .brand::before {
     font-weight: bold;
     content: "#{ $brand } ";

@@ -23,6 +23,29 @@
   border-bottom: 1px dotted rgba(65, 67, 82, 0.4);
 }
 
+.jcarlosj-card {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #686b83;
+  margin: 0.5rem 0;
+  padding: 0;
+  width: 200px;
+}
+.jcarlosj-card h2 {
+  line-height: 50px;
+  margin: 0;
+  padding: 0 0.8rem;
+}
+.jcarlosj-card p {
+  padding: 0 0.8rem;
+}
+.jcarlosj-card img {
+  display: block;
+  height: 1 50px;
+  width: 100%;
+}
+
 .brand::before {
   font-weight: bold;
   content: "jcarlosj ";
