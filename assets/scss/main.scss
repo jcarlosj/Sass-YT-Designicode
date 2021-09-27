@@ -1,4 +1,29 @@
 // Archivo principal de Sass
-.site-title {
-    color: green;
+
+// ! Variables
+$primary: rgb(65, 67, 82);
+$secondary: rgb(104, 107, 131);
+$primary-opacity: rgba( $primary, 0.4 );
+$font-size: 1.75rem;
+$brand: 'jcarlosj';
+
+// ! Usando las variables
+.#{ $brand }-title-primary {
+    color: $primary;
+    font-size:  $font-size;
+}
+
+.#{ $brand }-title-secondary {
+    color: $secondary;
+    font-size:  $font-size - 0.5rem;
+}
+
+.#{ $brand }-title-light {
+    color: $primary-opacity;
+    font-size:  $font-size - 0.5rem;
+}
+
+.brand::before {
+    font-weight: bold;
+    content: "#{ $brand } ";
 }

@@ -1,5 +1,21 @@
-.site-title {
-  color: green;
+.jcarlosj-title-primary {
+  color: #414352;
+  font-size: 1.75rem;
+}
+
+.jcarlosj-title-secondary {
+  color: #686b83;
+  font-size: 1.25rem;
+}
+
+.jcarlosj-title-light {
+  color: rgba(65, 67, 82, 0.4);
+  font-size: 1.25rem;
+}
+
+.brand::before {
+  font-weight: bold;
+  content: "jcarlosj ";
 }
 
 /*# sourceMappingURL=main.css.map */
